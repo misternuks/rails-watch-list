@@ -1,0 +1,17 @@
+<div class="container mt-3">
+  <h1>Yo what up. Here are your lists:</h1>
+    <% @lists.each do |list| %>
+      <div
+        class="card-category mb-3"
+        style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(http://source.unsplash.com/featured/?movie&<%= rand(1000) %>)'
+        >
+        <%= link_to list.name, list_path(list), class: "text-decoration-none text-white"  %>
+      </div>
+    <% end %>
+</div>
+
+
+
+
+<%#
+<div class="card p-2 mb-2"><%= link_to list.name, list_path(list), class: "text-decoration-none"  %>
