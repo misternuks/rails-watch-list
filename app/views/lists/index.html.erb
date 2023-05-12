@@ -8,6 +8,8 @@
         <%= link_to list.name, list_path(list), class: "text-decoration-none text-white"  %>
       </div>
     <% end %>
+    <%= link_to 'Add a new list', new_list_path,
+    class: "d-flex justify-content-center btn btn-primary btn-block text-muted text-center" %>
 </div>
 
 

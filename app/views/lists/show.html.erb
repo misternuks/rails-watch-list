@@ -4,6 +4,7 @@
   />
   <div class="card-trip-infos">
     <div>
+      <h1><%= @list.name  %></h1>
       <h2>Bookmarks:</h2>
       <div class="card-container">
         <% @list.bookmarks.each do |bookmark| %>
@@ -25,7 +26,7 @@
     </div>
   </div>
     <%= link_to 'Add a new bookmark', new_list_bookmark_path(@list),
-    class: "d-flex justify-content-center btn btn-primary btn-block m-2 text-center" %>
+    class: "mb-2 d-flex justify-content-center btn btn-primary btn-block text-muted text-center" %>
 </div>
 
-<%= link_to 'Back to the lists', lists_path, class: "btn btn-primary m-2" %>
+<%= link_to 'Back to the lists', lists_path, class: "btn btn-primary text-muted m-2" %>
