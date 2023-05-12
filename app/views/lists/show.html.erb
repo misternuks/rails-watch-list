@@ -1,5 +1,5 @@
 <div class="card-trip">
-  <%= cl_image_tag("xdiiepjp66bbf91k1knb") %>
+  <%= @list.photo.attached? ? cl_image_tag(@list.photo.key) : cl_image_tag("cld-sample-5") %>
   <div class="card-trip-infos">
     <div>
       <h1><%= @list.name  %></h1>
